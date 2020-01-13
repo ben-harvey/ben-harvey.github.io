@@ -73,9 +73,9 @@ h3,
   margin: 25px 0;
 }
 
-#resume-btn:hover {
+/* #resume-btn:hover {
   color: #ffa466;
-}
+} */
 
 header {
   padding: 15px;
@@ -91,7 +91,7 @@ header {
   height: 40px;
 }
 
-#intro > h4 > img {
+#intro>h4>img {
   display: inline-block;
   padding-right: 5px;
 }
@@ -100,7 +100,7 @@ header {
   color: #000000;
 }
 
-#projects > ul {
+#projects>ul {
   -ms-align-items: flex-start;
   align-items: flex-start;
   margin-top: 75px;
@@ -109,6 +109,7 @@ header {
 #projects img {
   box-shadow: 0 0 25px #d2d7d3;
   width: 100%;
+  border-radius: 5px;
 }
 
 h4 {
@@ -137,7 +138,7 @@ p {
   font-weight: 400;
   line-height: 1.7rem;
   margin-bottom: 15px;
-  color: #494c54;
+  color: #33353B;
 }
 
 h4 a {
@@ -187,7 +188,7 @@ footer {
 
 .btn {
   background-color: #ed7164;
-  border: solid 1px #ed7164;
+  /* border: solid 1px #ed7164; */
   border-radius: 5px;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -198,7 +199,7 @@ footer {
 
 .icon {
   background-color: #ed7164;
-  border: solid 1px #ed7164;
+  /* border: solid 1px #ed7164; */
   border-radius: 25px;
   margin: 2%;
   min-width: 34px;
@@ -206,10 +207,16 @@ footer {
   width: 100%;
 }
 
+.logo-links .btn:hover,
+.logo-links .icon:hover {
+  background-color: #3a4354;
+  /* border: 1px solid #ed7164; */
+}
+
 .btn:hover,
 .icon:hover {
-  background-color: #6897bb;
-  border-color: #6897bb;
+  background-color: #3a4354;
+  /* border: 1px solid #ed7164; */
 }
 
 .horz-center {
@@ -249,10 +256,10 @@ footer {
 }
 
 #intro {
-  background: #494c54;
+  background: #3a4354;
 }
 
-#intro > p {
+#intro>p {
   text-align: center;
   width: 550px;
   color: #ffffff;
@@ -265,7 +272,7 @@ footer {
 ------------------------------------ */
 
 #redpoint {
-  background-color: #a0aab5;
+  background-color: #6897bb;
 }
 
 #redpoint-title-container,
@@ -291,13 +298,13 @@ footer {
   margin-top: 75px;
 }
 
-#redpoint-info-container > div,
-#redpoint-video-container > div {
+#redpoint-info-container>div,
+#redpoint-video-container>div {
   width: 50%;
 }
 
-#redpoint-info-container > div:first-of-type,
-#redpoint-video-container > div:first-of-type {
+#redpoint-info-container>div:first-of-type,
+#redpoint-video-container>div:first-of-type {
   margin-right: 2.5%;
 }
 
@@ -305,18 +312,20 @@ footer {
   height: auto;
   max-width: 100%;
   width: auto;
+  box-shadow: 0 0 25px #3a4254;
+  border-radius: 5px;
 }
 
-div > iframe {
+div>iframe {
   max-width: 100%;
 }
 
-#redpoint-info-container > div:last-of-type,
-#redpoint-video-container > div:last-of-type {
+#redpoint-info-container>div:last-of-type,
+#redpoint-video-container>div:last-of-type {
   margin-left: 2.5%;
 }
 
-#redpoint-video-container div:last-of-type > p {
+#redpoint-video-container div:last-of-type>p {
   width: 75%;
 }
 
@@ -327,7 +336,8 @@ div > iframe {
 
 #redpoint-repo-btn {
   margin-top: 25px;
-  width: 228px;
+  width: 180px;
+  padding: 10px;
 }
 
 /* ---------------------------------
@@ -417,7 +427,7 @@ div > iframe {
     line-height: 1.7rem;
   }
 
-  #projects > ul {
+  #projects>ul {
     -ms-align-items: center;
     align-items: center;
     flex-direction: column;
@@ -436,23 +446,23 @@ div > iframe {
     margin-top: 50px;
   }
 
-  #redpoint-info-container > div:first-of-type,
-  #redpoint-video-container > div:first-of-type {
+  #redpoint-info-container>div:first-of-type,
+  #redpoint-video-container>div:first-of-type {
     margin-right: 0;
   }
 
-  #redpoint-info-container > div:last-of-type,
-  #redpoint-video-container > div:last-of-type {
+  #redpoint-info-container>div:last-of-type,
+  #redpoint-video-container>div:last-of-type {
     margin-left: 0;
   }
 
-  #redpoint-info-container > div,
-  #redpoint-video-container > div {
+  #redpoint-info-container>div,
+  #redpoint-video-container>div {
     width: 90%;
   }
 
   #multilanguage-gif,
-  div > iframe {
+  div>iframe {
     margin-bottom: 50px;
   }
 
@@ -483,7 +493,7 @@ div > iframe {
 }
 
 @media (max-width: 570px) {
-  #intro > p {
+  #intro>p {
     width: 100%;
   }
 
@@ -508,13 +518,13 @@ div > iframe {
     align-self: center;
   }
 
-  #projects > ul {
+  #projects>ul {
     width: 100%;
   }
 }
 
 @media (max-width: 465px) {
-  #redpoint-info-container > div {
+  #redpoint-info-container>div {
     width: 100%;
   }
 
@@ -526,7 +536,7 @@ div > iframe {
     margin: 15%;
   }
 
-  #projects > ul {
+  #projects>ul {
     width: 100%;
   }
 }
@@ -552,7 +562,7 @@ div > iframe {
     width: 180px;
   }
 
-  #projects > ul {
+  #projects>ul {
     margin-top: 50px;
   }
 
